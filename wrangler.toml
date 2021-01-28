@@ -1,4 +1,4 @@
-name = "oli-status-page"
+name = "status-page"
 workers_dev = true
 account_id = ""
 type = "webpack"
