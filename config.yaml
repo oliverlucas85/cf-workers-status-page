@@ -15,10 +15,10 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: login-bca-com # unique identifier
+    name: IdP Production
+    description: 'BCA Identity Provider - Prod' # default=empty
+    url: 'https://login.bca.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -29,3 +29,4 @@ monitors:
     url: 'https://www.bca.com'
     method: GET
     expectStatus: 200
+    followRedirect: false # should fetch follow redirects, default=false
